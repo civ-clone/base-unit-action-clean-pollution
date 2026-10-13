@@ -1,0 +1,41 @@
+{
+  "name": "@civ-clone/base-unit-action-clean-pollution",
+  "version": "0.1.0",
+  "description": "The CleanPollution unit action: a worker cleans the pollution off its tile, over the turns the ruleset gives it.",
+  "repository": "git@github.com:civ-clone/base-unit-action-clean-pollution.git",
+  "keywords": [
+    "typescript",
+    "civilization"
+  ],
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "npm run ts:compile && npm run prettier:format",
+    "prettier:check": "prettier --config .prettierrc --check '**/*.ts'",
+    "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
+    "test": "ts-mocha ./tests/*.test.ts",
+    "ts:compile": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "@civ-clone/core-player": "^0.1.10",
+    "@civ-clone/core-terrain": "^0.1.0",
+    "@civ-clone/core-world-generator": "^0.1.0",
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^16.0.0",
+    "chai": "^4.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.8.8",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@civ-clone/base-tile-improvement-pollution": "^0.1.0",
+    "@civ-clone/core-rule": "^0.1.6",
+    "@civ-clone/core-tile-improvement": "^0.1.6",
+    "@civ-clone/core-turn-based-game": "^0.1.0",
+    "@civ-clone/core-unit": "^0.1.27",
+    "@civ-clone/core-world": "^0.1.18"
+  }
+}
