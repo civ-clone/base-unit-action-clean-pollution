@@ -42,7 +42,9 @@ exports.CleanPollution = CleanPollution;
 (0, registerDelayedAction_1.default)({
     BusyRule: CleaningPollution_1.default,
     handler: exports.COMPLETE,
-    action: (unit) => new CleanPollution(unit.tile(), unit.tile(), unit),
+    // Built from the game the unit is loaded into, so finishing after a load writes where that game looks
+    //  (civ-clone/web-renderer#248).
+    action: (unit, context) => new CleanPollution(unit.tile(), unit.tile(), unit, context.rules, context.tileImprovements, context.turn),
     complete: (unit, pendingEffect, action) => CleanPollution.complete(action),
 });
 exports.default = CleanPollution;

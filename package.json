@@ -35,7 +35,7 @@
     "@civ-clone/core-rule": "^0.1.6",
     "@civ-clone/core-tile-improvement": "^0.1.6",
     "@civ-clone/core-turn-based-game": "^0.1.0",
-    "@civ-clone/core-unit": "^0.1.27",
+    "@civ-clone/core-unit": "^0.1.33",
     "@civ-clone/core-world": "^0.1.18"
   }
 }
