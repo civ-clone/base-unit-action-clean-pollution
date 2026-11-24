@@ -1,6 +1,6 @@
 {
   "name": "@civ-clone/base-unit-action-clean-pollution",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The CleanPollution unit action: a worker cleans the pollution off its tile, over the turns the ruleset gives it.",
   "repository": "git@github.com:civ-clone/base-unit-action-clean-pollution.git",
   "keywords": [
